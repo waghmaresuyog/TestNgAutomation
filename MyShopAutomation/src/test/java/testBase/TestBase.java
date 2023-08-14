@@ -16,8 +16,9 @@ import java.time.Duration;
 public class TestBase {
     public static WebDriver driver;
     public HomePage homePage;
+    //Parameters annotation use to take value from xml file and pass to method
     @Parameters("browser")
-    @BeforeMethod
+    @BeforeMethod       // this annotation is use for run  before any test and start method use to open Browser 
     public void start(String browser) {
         //String browser = "firefox";
         if (browser.equalsIgnoreCase("firefox")) {

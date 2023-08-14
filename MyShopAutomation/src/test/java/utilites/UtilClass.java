@@ -47,7 +47,7 @@ public class UtilClass extends TestBase {
             throw new RuntimeException(e);
         }
     }
-
+    // This method is use for Take Screenshot
     public static void takeScreenshot(String name) {
         try {
             // Get current date and time

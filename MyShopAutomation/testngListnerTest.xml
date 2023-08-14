@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <!--the parameter tag is use to pass the parameter to the method and pass value from here  -->
     <parameter name="browser" value="ie"></parameter>
-    <listeners>
+    <listeners> <!-- By using this Listener tag we can run Listener class it use package name and class name -->
         <listener class-name="utilites.Listener"></listener>
-        
     </listeners>
     <test verbose="2" preserve-order="true" name="C:/Users/suyogw/Desktop/Auto/EShop/MyShopAutomation">
-        <classes>
+        <classes> <!-- it is use to run particular class and use package name . class name -->
             <class name="listenerEx.Sample">
                 <methods>
                     <include name="sum"/>
