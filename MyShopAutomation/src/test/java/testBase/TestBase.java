@@ -18,7 +18,7 @@ public class TestBase {
     public HomePage homePage;
     //Parameters annotation use to take value from xml file and pass to method
     @Parameters("browser")
-    @BeforeMethod       // this annotation is use for run  before any test and start method use to open Browser 
+    @BeforeMethod       // this annotation is use for run  before any test and start method use to open Browser
     public void start(String browser) {
         //String browser = "firefox";
         if (browser.equalsIgnoreCase("firefox")) {

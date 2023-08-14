@@ -32,11 +32,12 @@ public class HomePageTest extends TestBase {
     }
 
     @Test
-    public void verifyNokiaLumia() {
+    public void verifyNokiaLumia() throws InterruptedException {
         homePage.clickPhone();
         homePage.clickNokiaLumia();
         utilClass = new UtilClass();
         utilClass.clickAddToCart();
+        Thread.sleep(3000);
         utilClass.acceptPopup();
 
     }
