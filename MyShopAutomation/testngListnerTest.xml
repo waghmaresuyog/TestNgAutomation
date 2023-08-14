@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="ie"></parameter>
+    <listeners>
+        <listener class-name="utilites.Listener"></listener>
+        
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/suyogw/Desktop/Auto/EShop/MyShopAutomation">
+        <classes>
+            <class name="listenerEx.Sample">
+                <methods>
+                    <include name="sum"/>
+                    <include name="sub"/>
+                </methods>
+            </class>
+            <class name="testLayer.HomePageTest"></class>
+        </classes>
+    </test>
+</suite>
